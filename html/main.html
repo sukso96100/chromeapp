@@ -1,26 +1,12 @@
-<!DOCTYPE html>
-<html>
+<html ng-app="sample">
 <head>
-    <meta charset="utf-8">
-    <title>Hello World</title>
-    <link href="styles/main.css" rel="stylesheet"> 
-    <!-- load angularjs lib -->
-    <script src="lib/angular.js"></script> 
-</head>
-<body>
-   <tabs>
-      <pane title="Localization">
-        Date: {{ '2012-04-01' | date:'fullDate' }} <br>
-        Currency: {{ 123456 | currency }} <br>
-        Number: {{ 98765.4321 | number }} <br>
-      </pane>
-      <pane title="Pluralization">
-        <div ng-controller="BeerCounter">
-          <div ng-repeat="beerCount in beers">
-            <ng-pluralize count="beerCount" when="beerForms"></ng-pluralize>
-          </div>
-        </div>
-      </pane>
-    </tabs>
-</body>
+    <script src="lib/angularjs/angular.js"></script>
+    <script src="js/controllers.js"></script>
+    </head>
+    <body>
+        <div ng-controller="Ctrl">
+        <input type="number" ng-model="amount"> <br>
+   <tt> The Number = {{amount}}</tt>
+            </div>
+    </body>
 </html>
