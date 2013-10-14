@@ -5,6 +5,10 @@
     </head>
     <body>
          <input type="number" ng-model="value">
-    <h2>The Number =( {{value}} )</h2>
+        <select ng-model="type">
+             <option>USD</option>
+             <option>KRW</option>
+          </select>
+    <h2>The Number =( {{type}} | {{value}} )</h2>
     </body>
 </html>
