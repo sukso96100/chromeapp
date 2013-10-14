@@ -1,12 +1,10 @@
-<html ng-app="sample">
+<!doctype html>
+<html ng-app ng-csp>
 <head>
-    <script src="lib/angularjs/angular.js"></script>
-    <script src="js/controllers.js"></script>
+    <script src="../lib/angularjs/angular.js"></script>
     </head>
     <body>
-        <div ng-controller="Ctrl">
-        <input type="number" ng-model="amount"> <br>
-   <tt> The Number = {{amount}}</tt>
-            </div>
+         <input type="number" ng-model="value">
+    <h2>The Number =( {{value}} )</h2>
     </body>
 </html>
