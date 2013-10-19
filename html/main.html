@@ -2,13 +2,16 @@
 <html ng-app ng-csp>
 <head>
     <script src="../lib/angularjs/angular.js"></script>
+    <script src="../js/main.js"></script>
     </head>
     <body>
+        <form name="myForm" ng-controller="Ctrl">
          <input type="number" ng-model="value">
         <select ng-model="type">
              <option>USD</option>
              <option>KRW</option>
           </select>
     <h2>The Number =( {{type}} | {{value}} )</h2>
+            </form>
     </body>
 </html>
